@@ -1,0 +1,25 @@
+<div class="row">
+<div class="card" ng-repeat="challenge in challenges">
+  <div class="col-md-12">
+    <div class="card"  style="background-color: #ddd; border-color: #444; border-style:solid; border-width:thin;">
+      <div class="row"  style="margin-top:20px;">
+      <div class="col-md-6">
+        <div class="card-block"> <!-- Any Text Content Block within class="card-block" -->
+          <h2 style="text-align:left; margin-left:10px;">Challenge "{{challenge.Type}}"</h2>
+          <p class="card-text" style="text-align:left; margin-left:10px">Description: {{capitalizeFirstLetter(challenge.Description)}}</p>
+          <p class="card-text" style="text-align:left;  margin-left:10px">Sensor Type: {{challenge.SensorType}}</p>
+          <p class="card-text" style="text-align:left;  margin-left:10px">Duration Time in seconds: {{challenge.DurationSeconds}}</p>
+          <p  style= "margin-left:10px"><i class="fa fa-star-o fa-fw" aria-hidden="true"></i>&nbsp; {{challenge.Bonus}} pts!</p>
+          <a href="#" style="text-align:center;display:block;" class="btn btn-success">Challenge a friend!</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <img class="card-img-bottom" src="/img/{{challenge.Type}}.png" alt="{{challenge.Type}}" width="200px" style="margin-left:auto; margin-right:auto;margin-top: 10px; margin-bottom: 10px; display: block;">
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:20px;">
+  </div>
+</div>
+</div>
+</div>

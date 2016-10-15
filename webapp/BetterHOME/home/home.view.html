@@ -1,0 +1,54 @@
+<div class="row">
+<div class="card" ng-repeat="sensor in sensors">
+  <div class="col-md-4">
+    <div class="card"  style="background-color: #ddd; border-color: #444; border-style:solid; border-width:thin;">
+      <img class="card-img-top" src="/img/{{sensor.sensorType}}.png" alt="{{sensor.sensorType}}" width="100px" style="margin-left:auto; margin-right: auto;	margin-top: 10px; margin-bottom: 10px; display: block;">
+      <div class="card-block"> <!-- Any Text Content Block within class="card-block" -->
+        <p class="card-text" style="text-align:center;">{{capitalizeFirstLetter(sensor.sensorType)}}</p>
+        <p class="card-text" style="text-align:center;"> Sensor ID: {{sensor.sensorId}}</p>
+        <a href="#statistics?sensorId={{sensor.sensorId}}&sensorType={{sensor.sensorType}}" style="text-align:center;display:block;" class="btn btn-success">Show statistics</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row" style="margin-top:20px; ">
+  <div class="card">
+    <div class="col-md-4">
+      <div class="card"  style="background-color: #ddd; border-color: #444; border-style:solid; border-width:thin; height:200px">
+        <img class="card-img-top" href="/challenges" src="/img/add.png" alt="add sensor" width="100px" style="margin-left:auto; margin-right: auto;	margin-top: 10px; margin-bottom: 10px; display: block;">
+        <div class="card-block"> <!-- Any Text Content Block within class="card-block" -->
+          <p class="card-text" style="text-align:center;">Add a sensor</p>
+          <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title" style="text-align:center">Add sensor</h3>
+      </div>
+
+      <div style="text-align:center;">
+      <select class="selectpicker" data-style="btn-success" ng-model="newSensor">
+        <option value="temperature">Temperature</option>
+        <option value="pressure">Pressure</option>
+        <option value="humidity">Humidity</option>
+      </select>
+    </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success btn-block" ng-click="addNewSensor()" data-dismiss="modal">Add</button>
+      </div>
+    </div>
+
+  </div>
+</div>
