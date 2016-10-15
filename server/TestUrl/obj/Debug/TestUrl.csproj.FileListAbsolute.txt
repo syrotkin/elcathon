@@ -1,0 +1,6 @@
+C:\dev\elcathon\dev\server\TestUrl\obj\Debug\TestUrl.csprojResolveAssemblyReference.cache
+C:\dev\elcathon\dev\server\TestUrl\bin\Debug\TestUrl.exe.config
+C:\dev\elcathon\dev\server\TestUrl\bin\Debug\TestUrl.exe
+C:\dev\elcathon\dev\server\TestUrl\bin\Debug\TestUrl.pdb
+C:\dev\elcathon\dev\server\TestUrl\obj\Debug\TestUrl.exe
+C:\dev\elcathon\dev\server\TestUrl\obj\Debug\TestUrl.pdb

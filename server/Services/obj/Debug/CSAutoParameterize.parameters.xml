@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="FirstSampleContext-Web.config Connection String" description="FirstSampleContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=.\SQLEXPRESS;Initial Catalog=FirstSample;Integrated Security=SSPI" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\dev\\elcathon\\dev\\server\\Services\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FirstSampleContext']/@connectionString" />
+  </parameter>
+</parameters>
